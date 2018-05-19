@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>HangMan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!--Stylesheets/Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Script for icon-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <script src="assets/javascript/game.js"></script>
+    <div class="jumbotron-fluid background py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8 my-4">
+                    <img src="assets/images/cat-in-hangar.jpg" width="40%" height="40%">
+                </div>
+                <div class="col-12 col-md-4 my-4">
+                    <h1>Hang Man Game</h1>
+                    <button id="new-game-button">
+                        <i class="fas fa-gamepad"></i>
+                        New Game
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="contaier-fluid">
+    <div class="row">
+        <div class="col-12 text-center py-5" id="placeholder-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 my-4">
+                        <h2>Fill these in!
+                            <br>
+                            <span id="placeholders">
+                                ____ _____ ______!
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="col-12 col-md-6 my-4">
+                            <h2>Guessed Letters
+                                    <br>
+                                    <span id="guessed-letters">
+                                    </span>
+                                </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 text-center py-5">
+            <h3>
+                Guesses Left: <span id="guesses-left">0</span>
+            </h3>
+        </div>
+        <div class="col-12 col-md-4 text-center py-5">
+            <h3>Wins: <span id="wins">0</span>
+            </h3>
+        </div>
+        <div class="col-12 col-md-4 text-center py-5">
+            <h3>
+                Losses: <span id="losses">0</span>
+            </h3>
+        </div>
+    </div>
+</div>
+
+    <!--Javascript-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>

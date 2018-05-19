@@ -1,0 +1,29 @@
+body{
+    background-color:#ccac00; 
+    color: palegoldenrod;
+}
+
+.background{
+   background-image:url(../images/dog-19812_1920.jpg);
+   background-size: cover;
+}
+#new-game-button{
+outline: none;
+border: none;
+cursor: pointer;
+display: block;
+background-color: #e5c100;
+font-size: 22px;
+font-weight: bold;
+letter-spacing: 2px;
+padding: 25px;
+border-radius: 20px;
+box-shadow: 0 6px #ffe34c;
+}
+#placeholder-section{
+    background-color:#ffc300;
+}
+#placeholders{
+    letter-spacing: 6px;
+    font-size:40px;
+}
